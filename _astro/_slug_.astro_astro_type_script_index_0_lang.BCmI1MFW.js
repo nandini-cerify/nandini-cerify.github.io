@@ -1,0 +1,1 @@
+document.querySelectorAll(`[data-copy-code]`).forEach(e=>{let t,n=n=>{e.textContent=n,clearTimeout(t),t=window.setTimeout(()=>e.textContent=`Copy`,2e3)},r=async()=>{let t=e.parentElement?.querySelector(`pre`)?.textContent??``;try{await navigator.clipboard.writeText(t),n(`Copied!`)}catch{n(`Press Ctrl+C`)}};e.addEventListener(`click`,()=>void r())});

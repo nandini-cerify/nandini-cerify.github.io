@@ -1,0 +1,1 @@
+function e(e,t,n){let r=0,i,a=e=>{r=e,n(e)},o=()=>{i??=window.setInterval(()=>a((r+1)%e),t)};return o(),{select:a,pause:()=>{window.clearInterval(i),i=void 0},resume:o}}export{e as t};
